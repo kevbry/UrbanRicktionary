@@ -1,0 +1,42 @@
+﻿@model DemoWebApp.Models.Rickism
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rickism</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Term)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Term)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Definition)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Definition)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Usage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Created)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Created)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
